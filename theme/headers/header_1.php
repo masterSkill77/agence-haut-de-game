@@ -28,3 +28,13 @@ $description = get_bloginfo('description');
         </div>
     </div>
 </div>
+
+<div class="hero__two__container py-20">
+    <h1 class="text-center text-6xl w-full my-10">Votre agence immobilière</h1>
+    <h3 class="w-full text-center text-4xl mb-20"><?= $description ?></h3>
+
+
+    <div class="text-center w-1/4 mx-auto">
+        <button class="contact__button py-3 px-8 rounded-lg">Contactez-nous</button>
+    </div>
+</div>

@@ -51,3 +51,16 @@
     margin: 10px 0;
     background-color: rgba(223, 214, 214, 0.432);
 }
+
+.hero__two__container {
+    background-image: url("./../images//bloc_1/fond_polygones1.png");
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: top right;
+}
+
+.contact__button {
+    background-color: rgba(54, 24, 24, 0.74);
+    color: white;
+}
