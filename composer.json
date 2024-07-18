@@ -1,0 +1,17 @@
+{
+    "name": "masterskill/agence-haut-de-gamme",
+    "description": "\"Theme pour une agence immobilère de haut de gamme\"",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Masterskill\\AgenceHautDeGamme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Clairmont RAJAONARISON",
+            "email": "clairmont.rajaonarison@gmail.com"
+        }
+    ],
+    "require": {}
+}

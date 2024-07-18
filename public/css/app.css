@@ -1,0 +1,57 @@
+
+
+.immo__header {
+    height: 75px !important;
+    width: 100%;
+    padding: 0 3%;
+    background-color: rgba(90, 84, 84, 0.767);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.immo__menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.immo__menu li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.immo__menu__container {
+display: flex;
+align-items: center;
+width: 80%;
+}
+
+.menu-main-menu-container {
+    width: 100%;
+}
+
+.immo__logo {
+    width: 20%;
+}
+.immo__header img {
+    height: 75px;
+}
+body {
+    min-height: 10000px !important;
+    padding: 0;
+    margin: 0;
+}

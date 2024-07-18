@@ -1,0 +1,53 @@
+:root {
+    --text-header : rgba(245, 245, 245, 0.685);
+}
+
+
+.hero__container {
+    min-height: 950px;
+    background-position: top;
+    background-size: 100% 100%;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 0px;
+}
+
+.hero__container h1 {
+    font-size: 80px !important;
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--text-header)
+}
+
+.hero__container h3 {
+    color: var(--text-header);
+}
+
+.card__link__container {
+    background-color: var(--text-header);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid black;
+}
+
+.card__link__container:hover {
+    transition: 0.5s all;
+    color: var(--text-header);
+    cursor: pointer;
+    background-color: rgba(165, 42, 42, 0.336);
+}
+
+.button__call__action {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgba(223, 214, 214, 0.432);
+}
