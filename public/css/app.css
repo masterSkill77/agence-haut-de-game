@@ -50,8 +50,3 @@ width: 80%;
 .immo__header img {
     height: 75px;
 }
-body {
-    min-height: 10000px !important;
-    padding: 0;
-    margin: 0;
-}

@@ -37,4 +37,10 @@ $description = get_bloginfo('description');
     <div class="text-center w-1/4 mx-auto">
         <button class="contact__button py-3 px-8 rounded-lg">Contactez-nous</button>
     </div>
+
+    <div class="flex items-center justify-center mx-10 gap-20 mt-20">
+        <img src="<?= get_template_directory_uri() . '/public/images/bloc_1/maison-cotiere-decor-elegant-moderne-accents-verre-metal.jpg' ?>" alt="" class="w-[30%]">
+        <img src="<?= get_template_directory_uri() . '/public/images/bloc_1/maison-cotiere-decor-elegant-moderne-accents-verre-metal.jpg' ?>" alt="" class="w-[30%]">
+        <img src="<?= get_template_directory_uri() . '/public/images/bloc_1/maison-cotiere-decor-elegant-moderne-accents-verre-metal.jpg' ?>" alt="" class="w-[30%]">
+    </div>
 </div>
