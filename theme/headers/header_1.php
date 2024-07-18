@@ -15,7 +15,7 @@ $description = get_bloginfo('description');
         <div class="w-1/4 text-center card__link__container">Estimer</div>
     </div>
 
-    <div class="absolute top-[30%] right-2 w-[5%]">
+    <div class="fixed top-[30%] right-2 w-[5%]">
         <div class="button__call__action">
             <img src="<?= get_template_directory_uri() . '/public/images/top__icons/email.png' ?>" alt="" class="w-15 h-15">
         </div>
