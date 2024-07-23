@@ -64,3 +64,14 @@
     background-color: rgba(54, 24, 24, 0.74);
     color: white;
 }
+
+.estate__card:hover {
+    transition: 0.3s all;
+    box-shadow: 3px 3px 20px black;
+    padding: 10px;
+}
+
+.bloc__title {
+    color: #5a1e1ebf !important;
+    font-weight: bold;
+}
