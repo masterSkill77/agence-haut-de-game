@@ -9,6 +9,8 @@ use Masterskill\AgenceHautDeGamme\Classes\Support;
 
 define("AGENCE_IMMO_ASSETS_DIRECTORY", get_template_directory_uri() . '/public');
 
+define("PUBLIC_IMAGES_DIRECTORY", get_template_directory_uri() . '/public/images');
+
 Menu::register();
 Script::register();
 Support::register();

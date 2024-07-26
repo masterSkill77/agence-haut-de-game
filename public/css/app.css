@@ -50,3 +50,10 @@ width: 80%;
 .immo__header img {
     height: 75px;
 }
+
+.button__container {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
