@@ -13,7 +13,7 @@ $services = [
 
     <div class="w-full flex items-center justify-evenly">
         <?php foreach ($services as $service => $description) { ?>
-            <div class="p-4 w-1/4 border">
+            <div class="p-4 w-1/4">
 
                 <div class="flex items-center justify-center flex-wrap">
                     <div class="w-full flex items-center justify-center mb-10">
