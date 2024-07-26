@@ -29,6 +29,11 @@
             Espace propriétaire
         </a>
     </div>
+
+    <?= wp_nav_menu(['theme_location' => 'agence-footer-menu', 'menu_class' => 'immo__footer__menu', 'container' => '']) ?>
+    <div class="w-full text-center text-white">
+        &#169; <?= date("Y") ?> - Tous droits réservés
+    </div>
 </div>
 
 </body>

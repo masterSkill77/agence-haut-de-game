@@ -5,5 +5,14 @@
     background-color: #312020bf !important;
     display: flex;
     align-items: start;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.immo__footer__menu {
+    margin: 20px 0;
+    display: flex !important;
+    gap: 20px;
+    color: white;
+    font-weight: 600;
 }
