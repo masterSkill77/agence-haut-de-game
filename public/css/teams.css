@@ -1,0 +1,18 @@
+.teams__container {
+    background-image: url("./../images//bloc_1/fond_polygones2.png");
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: top left;
+}
+
+.card__agent {
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: gray 2px 2px 20px;
+    padding-top: 50%;
+}
+
+.image__agent {
+    z-index: 100000;
+}

@@ -10,4 +10,7 @@ include(__DIR__ . '/theme/services/service.php');
 
 include(__DIR__ . '/theme/estates/latest-estates.php');
 
+include(__DIR__ . '/theme/teams/teams.php');
+
+
 get_footer();

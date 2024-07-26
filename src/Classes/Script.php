@@ -37,7 +37,7 @@ class Script implements IClass
 
     public static function enqueue_styles()
     {
-        $styles = ['app', 'header'];
+        $styles = ['app', 'header', 'teams', 'footer'];
 
         foreach ($styles as $style) {
             wp_enqueue_style($style, get_template_directory_uri() . "/public/css/$style.css", [], null, 'screen');
