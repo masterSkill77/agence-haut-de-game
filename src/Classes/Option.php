@@ -5,16 +5,17 @@ namespace Masterskill\AgenceHautDeGamme\Classes;
 class Option
 {
     public const THEME_OPTION = "immo_theme";
+    public const PHONE_OPTION = "immo_phone";
 
-    public static function setThemeOption(int $option)
+
+    public static function getThemeOption(string $themeOption, mixed $default = ''): mixed
     {
-        $option = $option < 0 || $option > 3 ? 1 : $option;
-
-        update_option(Option::THEME_OPTION, $option);
+        return get_option($themeOption, $default);
     }
 
-    public static function getThemeOption(): int
+
+    public static function setThemeOption(string $themeOption, mixed $value)
     {
-        return get_option(Option::THEME_OPTION, 1);
+        update_option($themeOption, $value);
     }
 }
