@@ -24,7 +24,7 @@ wp_footer() ?>
     </div>
     <div class="text-white  w-1/3 flex items-start flex-wrap gap-y-4">
         <h1 class="text-center font-bold w-full text-2xl">Contactez-nous</h1>
-        <span class="text-center w-full"><?= get_bloginfo('admin_email') ?></span>
+        <span class="text-center w-full"><?= Option::getThemeOption(Option::EMAIL_OPTION) ?></span>
         <span class="text-center w-full"><?= Option::getThemeOption(Option::PHONE_OPTION) ?></span>
     </div>
     <div class="text-white  w-1/3 flex items-start justify-center flex-wrap gap-y-4">

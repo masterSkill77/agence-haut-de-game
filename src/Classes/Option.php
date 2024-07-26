@@ -6,6 +6,8 @@ class Option
 {
     public const THEME_OPTION = "immo_theme";
     public const PHONE_OPTION = "immo_phone";
+    public const EMAIL_OPTION = "immo_email";
+    public const API_OPTION = "immo_api";
 
 
     public static function getThemeOption(string $themeOption, mixed $default = ''): mixed
