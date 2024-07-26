@@ -1,6 +1,7 @@
 .footer__container {
     margin-top: 100px;
     padding-top: 50px;
+    padding-bottom: 100px;
     background-color: #312020bf !important;
     display: flex;
     align-items: start;
