@@ -1,4 +1,8 @@
-<?php wp_footer() ?>
+<?php
+
+use Masterskill\AgenceHautDeGamme\Classes\Option;
+
+wp_footer() ?>
 <div class="footer__container">
     <div class="w-1/3 flex justify-center items-start flex-wrap">
         <?php
@@ -19,12 +23,12 @@
         </div>
     </div>
     <div class="text-white  w-1/3 flex items-start flex-wrap gap-y-4">
-        <h1 class="font-bold w-full text-2xl">Contactez-nous</h1>
-        <span class="w-full"><?= get_bloginfo('admin_email') ?></span>
-        <span class="w-full">09 01 02 03 04</span>
+        <h1 class="text-center font-bold w-full text-2xl">Contactez-nous</h1>
+        <span class="text-center w-full"><?= get_bloginfo('admin_email') ?></span>
+        <span class="text-center w-full"><?= Option::getThemeOption(Option::PHONE_OPTION) ?></span>
     </div>
-    <div class="text-white  w-1/3 flex items-start flex-wrap gap-y-4">
-        <h1 class="font-bold w-full text-2xl">Se connecter</h1>
+    <div class="text-white  w-1/3 flex items-start justify-center flex-wrap gap-y-4">
+        <h1 class="text-center font-bold w-full text-2xl">Se connecter</h1>
         <a href="<?= wp_login_url() ?>" class="button__container rounded-xl">
             Espace propriétaire
         </a>
