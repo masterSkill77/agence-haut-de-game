@@ -5,7 +5,7 @@ use Masterskill\AgenceHautDeGamme\Classes\Option;
 
 $apiCall = Endpoint::get('/bien');
 
-$biens = ($apiCall['data']);
+$biens = isset($apiCall['data']) ? $apiCall['data'] : false;
 
 ?>
 
@@ -14,7 +14,7 @@ $biens = ($apiCall['data']);
     <h3 class="text-center text-2xl w-full mb-40">Découvrez nos derniers biens proposés</h3>
 
     <div class='flex items-center justify-center flex-wrap gap-4 mb-40'>
-        <?php if (Option::getThemeOption(Option::API_OPTION)) :  foreach ($biens as $estate) { ?>
+        <?php if (!empty(Option::getThemeOption(Option::API_OPTION))) :  foreach ($biens as $estate) { ?>
 
                 <div class='w-1/5 flex items-center justify-center flex-wrap border border-solid p-4 cursor-pointer estate__card'>
                     <img src="<?= get_template_directory_uri() . '/public/images/bloc_1/maison-cotiere-decor-elegant-moderne-accents-verre-metal.jpg' ?>" alt="" class="w-full mb-4">

@@ -5,7 +5,7 @@ use Masterskill\AgenceHautDeGamme\Classes\Option;
 
 $apiCall = Endpoint::get('/agency');
 
-$teams = ($apiCall['users']);
+$teams = isset($apiCall['users']) ? $apiCall['users'] : false;
 
 ?>
 
@@ -15,7 +15,7 @@ $teams = ($apiCall['users']);
     <h3 class="w-full text-center text-4xl mb-20">Faites confiance à vos experts dans vos projets immobiliers</h3>
 
     <div class="flex items-center justify-center mx-10 gap-20 my-[10%]">
-        <?php if (Option::getThemeOption(Option::API_OPTION)) : foreach ($teams as $agent) { ?>
+        <?php if (Option::getThemeOption(Option::API_OPTION) && $teams) : foreach ($teams as $agent) { ?>
                 <div class="w-[25%] relative flex flex-wrap items-center justify-center">
                     <img src="<?= ($agent['photo_url'] != null) ? Endpoint::getImageAgent($agent['photo_url']) : get_template_directory_uri() . '/public/images/agents/photo_agent1.png' ?>" alt="" class="rounded-full image__agent mx-auto">
                     <div class="text-center absolute card__agent w-full pt-36 top-[50%] min-h-[250px]">
