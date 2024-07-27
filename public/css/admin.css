@@ -5,12 +5,36 @@
 }
 
 
-.theme__config {}
+.theme__config label {
+    width: 100px !important;
+}
 .theme__config .select__theme{
-    width: 10%;
+    width: 13.5%;
 }
 
 
 .submit__button {
     margin: 20px 0px;
+}
+
+.input__rs {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.alert__success {
+    width: 100%;
+    color: black;
+    padding: 10px 10px;
+    background-color: rgb(188 238 188);;
+    border: 1px solid rgb(27, 185, 27);
+}
+
+.alert__error {
+    width: 100%;
+    color: black;
+    padding: 10px 10px;
+    border: 1px solid rgb(199, 68, 68);
+    background-color: rgb(255 187 187);
 }

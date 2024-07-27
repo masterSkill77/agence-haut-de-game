@@ -16,10 +16,10 @@ wp_footer() ?>
         ?>
         <img src="<?= $url ?>" class="w-1/2 h-36 mt-[-8%]" />
         <div class="w-full flex items-center justify-center gap-4">
-            <img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/facebook.png"  ?>" class="w-12" />
-            <img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/instagram.png"  ?>" class="w-12" />
-            <img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/linkedin.png"  ?>" class="w-12" />
-            <img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/youtube.png"  ?>" class="w-12" />
+            <?php if (!empty(Option::getThemeOption(Option::FB_OPTION))) : ?> <img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/facebook.png"  ?>" class="w-12" /><?php endif ?>
+            <?php if (!empty(Option::getThemeOption(Option::INSTA_OPTION))) : ?><img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/instagram.png"  ?>" class="w-12" /><?php endif ?>
+            <?php if (!empty(Option::getThemeOption(Option::LN_OPTION))) : ?><img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/linkedin.png"  ?>" class="w-12" /><?php endif ?>
+            <?php if (!empty(Option::getThemeOption(Option::YT_OPTION))) : ?><img src="<?= PUBLIC_IMAGES_DIRECTORY . "/socials/youtube.png"  ?>" class="w-12" /><?php endif ?>
         </div>
     </div>
     <div class="text-white  w-1/3 flex items-start flex-wrap gap-y-4">
