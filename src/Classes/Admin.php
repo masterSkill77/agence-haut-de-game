@@ -23,7 +23,7 @@ class Admin implements IClass
 
     public static function register_new_admin_menu()
     {
-        add_menu_page('Administration du template', 'Administration du template', 'manage_options', 'template-administration', [Admin::class, 'render'], 'dashicons-admin-tools');
+        $slug = add_menu_page('Administration du template', 'Administration du template', 'manage_options', 'template-administration', [Admin::class, 'render'], 'dashicons-admin-tools');
     }
 
     public static function render()
