@@ -10,7 +10,7 @@ use Exception;
 
 class Endpoint
 {
-    protected const API_ENDPOINT = 'http://127.0.0.1:8000/api/v1';
+    protected const API_ENDPOINT = 'https://logiciel.koders.mg/api/v1';
 
     public static function get(string $url, mixed $parameters = []): mixed
     {
